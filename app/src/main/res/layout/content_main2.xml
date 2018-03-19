@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.yuanshuai.nao.activity.Main2"
+    tools:showIn="@layout/app_bar_main2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lh"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="@dimen/tw"
+            android:layout_height="match_parent"
+            android:text=" 温度："/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/t1"
+            android:text="27"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="@dimen/tw"
+            android:layout_height="match_parent"
+            android:text="度"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lh"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="@dimen/tw"
+            android:layout_height="match_parent"
+            android:text=" 湿度："/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/t2"
+            android:text="27"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="@dimen/tw"
+            android:layout_height="match_parent"
+            android:text="度"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lh"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="@dimen/tw"
+            android:layout_height="match_parent"
+            android:text=" 烟雾："/>
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="27" />
+
+        <TextView
+            android:layout_width="@dimen/tw"
+            android:layout_height="match_parent"
+            android:text="单位"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lh"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="@dimen/tw"
+            android:layout_height="match_parent"
+            android:text=" 窗帘1：" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lh"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="@dimen/tw"
+            android:layout_height="match_parent"
+            android:text=" 窗帘2：" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lh"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="@dimen/tw"
+            android:layout_height="match_parent"
+            android:text=" 窗帘3：" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#fff"
+        android:id="@+id/image"/>
+</LinearLayout>
