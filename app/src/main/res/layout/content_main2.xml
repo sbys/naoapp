@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,130 +8,329 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.yuanshuai.nao.activity.Main2"
     tools:showIn="@layout/app_bar_main2">
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/lh"
-        android:orientation="horizontal"
-        android:weightSum="1">
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lh"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text=" 温度："/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/t1"
+                android:text="27"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text="单位"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lh"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text=" 湿度："/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/t2"
+                android:text="27"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text="单位"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lh"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text=" 烟雾："/>
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="27" />
+
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text="单位"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lh"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text=" 光照："/>
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="27" />
+
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text="单位"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lh"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text=" 自动/手动1：" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/b8"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lh"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text=" 灯1：" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/b1"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lh"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text=" 灯2：" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/b2"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lh"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text=" 灯3：" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/b3"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lh"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text=" 插座1：" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/b4"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lh"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text=" 插座2：" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/b5"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lh"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text=" 窗帘1：" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/b6"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lh"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text=" 门禁：" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/b7"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lh"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="@dimen/tw"
+                android:layout_height="match_parent"
+                android:text=" 开门：" />
+
+            <Button
+                android:id="@+id/door"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.06" />
+
+        </LinearLayout>
+
         <TextView
-            android:layout_width="@dimen/tw"
-            android:layout_height="match_parent"
-            android:text=" 温度："/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:id="@+id/t1"
-            android:text="27"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="@dimen/tw"
-            android:layout_height="match_parent"
-            android:text="度"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  机器人管家"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="4">
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/go"
+                android:layout_weight="1"
+                android:background="@mipmap/go"
+                android:layout_gravity="center_horizontal"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/left"
+                    android:background="@mipmap/left"
+                    android:layout_marginRight="20dp"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/right"
+                    android:id="@+id/right"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/stop"
+                android:background="@mipmap/stop"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/say"
+                android:background="@mipmap/speak"/>
+        </LinearLayout>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/lh"
-        android:orientation="horizontal"
-        android:weightSum="1">
-        <TextView
-            android:layout_width="@dimen/tw"
-            android:layout_height="match_parent"
-            android:text=" 湿度："/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:id="@+id/t2"
-            android:text="27"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="@dimen/tw"
-            android:layout_height="match_parent"
-            android:text="度"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/lh"
-        android:orientation="horizontal"
-        android:weightSum="1">
-        <TextView
-            android:layout_width="@dimen/tw"
-            android:layout_height="match_parent"
-            android:text=" 烟雾："/>
-
-        <TextView
-            android:id="@+id/t3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="27" />
-
-        <TextView
-            android:layout_width="@dimen/tw"
-            android:layout_height="match_parent"
-            android:text="单位"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/lh"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:layout_width="@dimen/tw"
-            android:layout_height="match_parent"
-            android:text=" 窗帘1：" />
-
-        <android.support.v7.widget.SwitchCompat
-            android:id="@+id/b1"
-            android:layout_width="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_height="match_parent"
-            android:gravity="center" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/lh"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
-
-        <TextView
-            android:layout_width="@dimen/tw"
-            android:layout_height="match_parent"
-            android:text=" 窗帘2：" />
-
-        <android.support.v7.widget.SwitchCompat
-            android:id="@+id/b2"
-            android:layout_width="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_height="match_parent"
-            android:gravity="center" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/lh"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
-
-        <TextView
-            android:layout_width="@dimen/tw"
-            android:layout_height="match_parent"
-            android:text=" 窗帘3：" />
-
-        <android.support.v7.widget.SwitchCompat
-            android:id="@+id/b3"
-            android:layout_width="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_height="match_parent"
-            android:gravity="center" />
-
-    </LinearLayout>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="#fff"
-        android:id="@+id/image"/>
-</LinearLayout>
+</ScrollView>

@@ -5,6 +5,8 @@ import com.example.yuanshuai.nao.model.Family;
 import com.example.yuanshuai.nao.model.Finfo;
 import com.example.yuanshuai.nao.model.Output;
 
+import java.util.List;
+
 import okhttp3.ResponseBody;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -47,9 +49,21 @@ public interface NetApi {
     @POST(pubcommon+"commond")
     @FormUrlEncoded
     Observable<Output> commond(@Field("cid")String cid,@Field("fid")String fid);
-    @POST(pubcommon+"getFu")
+//    获取列表
+    @POST(pubcommon+"getFamily")
+    Observable<Output<List<Family>>> getFList();
+//    绑定关系
+    @POST(pubcommon+"fu")
     @FormUrlEncoded
-    Observable<ResponseBody> getFu2(@Field("uid") String name);
+    Observable<Output> fu(@Field("fid")Integer fid,@Field("uid")String uid);
+//    解除关系
+    @POST(pubcommon+"release")
+    @FormUrlEncoded
+    Observable<ResponseBody> release(@Field("fid")Integer fid,@Field("uid")String uid);
+//    自动手动控制
+    @POST(pubcommon+"control")
+    @FormUrlEncoded
+    Observable<Output> control(@Field("fid")Integer fid,@Field("control")Boolean b);
 
 
 

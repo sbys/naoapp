@@ -15,26 +15,26 @@ public class Finfo {
 
     private Double c;
 
-    private Boolean d=true;
+    private Boolean d=false;
 
-    private Boolean e=true;
+    private Boolean e=false;
 
-    private Boolean f=true;
+    private Boolean f=false;
 
-    private Boolean g;
+    private Boolean g=false;
 
-    private Boolean h;
+    private Boolean h=false;
 
-    private Boolean i;
+    private Boolean i=false;
 
-    private Boolean j;
+    private Boolean j=false;
 
-    private Boolean k;
+    private Boolean k=false;
 
-    private Boolean l;
+    private Boolean l=false;
 
 
-    private Boolean m;
+    private Boolean m=false;
 
     public Integer getFid() {
         return fid;

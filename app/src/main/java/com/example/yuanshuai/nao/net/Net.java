@@ -98,10 +98,23 @@ public class Net {
     public Observable<Output> commond(Integer cid){
         return  ret.commond(Integer.toString(cid),Integer.toString(fid));
     }
-    public Observable<ResponseBody> getFu2(){
-        return  ret.getFu2(name);
+//    自动手动控制
+    public Observable<Output> control(boolean b){
+        return ret.control(fid,b);
+    }
+//    获取
+    public Observable<Output<List<Family>>> getFList(){
+        return ret.getFList();
     }
 
+//  绑定fu
+    public Observable<Output> fu(Integer fid){
+        return  ret.fu(fid,name);
+    }
+//    解除fu
+    public Observable<ResponseBody> release(Integer fid){
+        return ret.release(fid,name);
+    }
 
 
 
